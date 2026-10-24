@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Personal Esportivo | Alta Performance & Fundamentos do Futebol</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Overlay para fechar o menu mobile ao clicar fora -->
+  <div class="menu-backdrop" id="menu-backdrop"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <nav class="nav-hero container">
+      <div class="nav-cabecalho">
+        <a href="#inicio" class="logo">
+          <i class="fa-solid fa-futbol"></i> PRO<span>PERFORMANCE</span>
+        </a>
+      </div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="mobile-header">
+          <span class="logo-mobile"><i class="fa-solid fa-futbol"></i> MENU</span>
+          <button class="btn-close-menu" id="btn-close-menu" aria-label="Fechar menu"><i class="fa-solid fa-xmark"></i></button>
+        </li>
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#metodos" class="nav-link">Métodos</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+        <li><a href="#nossotreino" class="nav-link">Nosso Dia a Dia</a></li>
+        <li><a href="#contato" class="btn-cta-nav">Agendar Avaliação</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Principal Split -->
+    <section class="sec-principal" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="personal-card">
+            <div class="personal-profile">
+              <div class="avatar-wrapper">
+                <img src="/img/pedro.png" alt="Foto do Personal Trainer Esportivo" class="personal-img">
+                <span class="status-badge" title="Disponível para novos alunos"></span>
+              </div>
+              <div class="personal-info">
+                <h3>Treinador Pedro</h3>
+                <p><i class="fa-solid fa-certificate"></i> Especialista em Fundamentos & Performance</p>
+              </div>
+            </div>
+
+            <div class="hero-texto">
+              <span class="badge-tag"><i class="fa-solid fa-fire"></i> Treino Individual & de Alta Performance</span>
+              <h1>Evolua Seu <span>Futebol</span> ao Nível Profissional</h1>
+              <p>Domine passe, recepção orientada, tomada de decisão e arranque tático com metodologia prática individualizada.</p>
+              
+              <div class="hero-btns">
+                <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20treino%20de%20futebol." target="_blank" rel="noopener" class="btn-primary">
+                  <i class="fa-brands fa-whatsapp"></i> Agendar Aula Experimental
+                </a>
+                <a href="#metodos" class="btn-secondary">Ver Métodos <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="personal-stats">
+              <div class="stat-item">
+                <span class="stat-num">+100</span>
+                <span class="stat-desc">Atletas Treinados</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-desc">Prática em Campo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="video-container">
+            <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1600&auto=format&fit=crop">
+              <source src="./img/pedro-img.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos em HTML5.
+            </video>
+            <div class="video-tag">
+              <i class="fa-solid fa-circle-play"></i> Treino em Ação
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE MÉTODOS -->
+    <section class="sec-metodos" id="metodos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Metodologia Exclusiva</span>
+          <h2>Métodos de <span>Treinamento Técnico</span></h2>
+          <p>Treinos estruturados em pilares essenciais do futebol profissional para acelerar a evolução do atleta dentro de campo.</p>
+        </div>
+
+        <div class="metodos-grid">
+          
+          <!-- Card 1 -->
+          <article class="card-metodo" data-modal="modal-fundamentos">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800&auto=format&fit=crop" alt="Treino de Fundamentos e Controle de Bola" class="card-img" loading="lazy">
+              <div class="card-badge"><i class="fa-solid fa-star"></i> Mais Procurado</div>
+              <div class="card-icon-floating"><i class="fa-solid fa-futbol"></i></div>
+            </div>
+            <div class="card-content">
+              <h3>Fundamentos & Controle de Bola</h3>
+              <p>Refinamento técnico de passe curto/longo, domínio orientado sob pressão, condução rápida e finalizações de média e longa distância.</p>
+              <ul class="metodo-features">
+                <li><i class="fa-solid fa-check-circle"></i> Controle de bola refinado</li>
+                <li><i class="fa-solid fa-check-circle"></i> Precisão nos passes e finalizações</li>
+              </ul>
+              <button class="btn-card">Detalhes do Método <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card-metodo" data-modal="modal-fisico">
+            <div class="card-img-wrapper">
+              <img src="https://dicasef.com.br/wp-content/uploads/2024/06/treino-de-futebol-1.jpg" alt="Preparação Física Específica para Futebol" class="card-img" loading="lazy">
+              <div class="card-badge"><i class="fa-solid fa-bolt"></i> Alta Intensidade</div>
+              <div class="card-icon-floating"><i class="fa-solid fa-stopwatch"></i></div>
+            </div>
+            <div class="card-content">
+              <h3>Preparação Física Específica</h3>
+              <p>Treinamento funcional focado em ações reais de jogo: tiros curtos de aceleração, agilidade, mudança de direção e resistência muscular.</p>
+              <ul class="metodo-features">
+                <li><i class="fa-solid fa-check-circle"></i> Arranque e explosão muscular</li>
+                <li><i class="fa-solid fa-check-circle"></i> Prevenção de lesões articulares</li>
+              </ul>
+              <button class="btn-card">Detalhes do Método <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card-metodo" data-modal="modal-tatico">
+            <div class="card-img-wrapper">
+              <img src="./img/tatico-cognição.png" alt="Leitura Tática e Inteligência de Jogo" class="card-img" loading="lazy">
+              <div class="card-badge"><i class="fa-solid fa-brain"></i> Cognitivo</div>
+              <div class="card-icon-floating"><i class="fa-solid fa-chess-board"></i></div>
+            </div>
+            <div class="card-content">
+              <h3>Leitura Tática & Cognição</h3>
+              <p>Aprimoramento da inteligência de jogo, visão periférica, ocupação racional de espaços e agilidade mental para tomadas de decisão.</p>
+              <ul class="metodo-features">
+                <li><i class="fa-solid fa-check-circle"></i> Reação rápida sob pressão</li>
+                <li><i class="fa-solid fa-check-circle"></i> Posicionamento corporal inteligente</li>
+              </ul>
+              <button class="btn-card">Detalhes do Método <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card-metodo" data-modal="modal-especifico">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=800&auto=format&fit=crop" alt="Treinamento Técnico por Posição" class="card-img" loading="lazy">
+              <div class="card-badge"><i class="fa-solid fa-bullseye"></i> Foco Posição</div>
+              <div class="card-icon-floating"><i class="fa-solid fa-crosshair"></i></div>
+            </div>
+            <div class="card-content">
+              <h3>Treinamento Específico por Posição</h3>
+              <p>Treinos focados nas exigências exatas da sua função em campo: duelos 1v1, marcação, desarmes, cruzamentos ou movimentação de pivô.</p>
+              <ul class="metodo-features">
+                <li><i class="fa-solid fa-check-circle"></i> Exercícios específicos por função</li>
+                <li><i class="fa-solid fa-check-circle"></i> Domínio dos duelos individuais</li>
+              </ul>
+              <button class="btn-card">Detalhes do Método <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE MIM -->
+    <section class="sec-sobre" id="sobre">
+      <div class="container sobre-grid">
+        <div class="sobre-media">
+          <div class="sobre-img-box">
+            <img src="./img/pedro.png" alt="Professor Personal Esportivo Pedro" class="sobre-img" loading="lazy">
+            <div class="badge-cbf">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <strong>Licença CBF</strong>
+                <span>Treinador Credenciado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-info">
+          <span class="section-tag"><i class="fa-solid fa-user-check"></i> Trajetória Profissional</span>
+          <h2>Professor & Personal Esportivo <span>Pedro</span></h2>
+          <p class="sobre-destaque">Formado em Educação Física e certificado pela CBF para treinar e desenvolver atletas de todas as idades.</p>
+          <p class="sobre-bio">Natural de São Paulo, possuo vivência prática como ex-jogador de futebol e ampla experiência na preparação técnica de atletas para grandes clubes. Atualmente atuo no desenvolvimento de talentos na <strong>Escola de Futebol do Santos F.C. (Meninos da Vila)</strong>.</p>
+          
+          <div class="sobre-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <h4>Educação Física</h4>
+                <p>Formação Superior e Biomecânica</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <h4>Santos F.C.</h4>
+                <p>Técnico Meninos da Vila</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Treinador%20Pedro!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> Falar com o Treinador
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO NOSSO DIA A DIA (COM CARROSSEL INTERATIVO) -->
+    <section class="sec-dia-a-dia" id="nossotreino">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-camera-retro"></i> Vivência Prática</span>
+          <h2>Nosso <span>Dia a Dia em Campo</span></h2>
+          <p>Confira os bastidores, a intensidade e o ambiente de evolução constante nas nossas sessões de treino com os Meninos da Vila.</p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev-btn" id="carousel-prev" aria-label="Imagem Anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          
+          <div class="carousel-track-container" id="carousel-container">
+            <div class="carousel-track" id="carousel-track">
+              <!-- Slide 1 -->
+              <div class="carousel-slide active">
+                <div class="slide-card">
+                  <img src="./img/corrosel-1.png" alt="Treino de Fundamentos e Passe" class="slide-img">
+                  <div class="slide-overlay">
+                    <span class="slide-tag"><i class="fa-solid fa-futbol"></i> Conquistas</span>
+                    <h3>Nossa comemoração empolga</h3>
+                    <p>Um time campeão sempre comemora com emoção, juntos e unidos.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-slide">
+                <div class="slide-card">
+                  <img src="./img/carrosel-2.png" alt="Treino de Explosão e Preparação Física" class="slide-img">
+                  <div class="slide-overlay">
+                    <span class="slide-tag"><i class="fa-solid fa-bolt"></i> Pós treino Física</span>
+                    <h3>Pós treino aquele sorriso no rosto</h3>
+                    <p>Não somos apenas um time mas sim uma familia que se ajuda no dia-a-dia.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-slide">
+                <div class="slide-card">
+                  <img src="./img/carrosel-3.png" alt="Leitura Tática de Jogo" class="slide-img">
+                  <div class="slide-overlay">
+                    <span class="slide-tag"><i class="fa-solid fa-chess-board"></i> Orientação Tática</span>
+                    <h3>Tomada de Decisão em pouco tempo para vencer o jogo e manter o ritimo</h3>
+                    <p>Simulação real de situações de jogo e inteligência cognitiva.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide">
+                <div class="slide-card">
+                  <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=1200&auto=format&fit=crop" alt="Treino Específico de Posição" class="slide-img">
+                  <div class="slide-overlay">
+                    <span class="slide-tag"><i class="fa-solid fa-bullseye"></i> Nosso adiversário</span>
+                    <h3>Duelo de gigantes</h3>
+                    <p>A preparação do adversário sendo assitida.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn next-btn" id="carousel-next" aria-label="Próxima Imagem">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="carousel-dots" id="carousel-dots">
+          <button class="dot active" data-index="0" aria-label="Ir para foto 1"></button>
+          <button class="dot" data-index="1" aria-label="Ir para foto 2"></button>
+          <button class="dot" data-index="2" aria-label="Ir para foto 3"></button>
+          <button class="dot" data-index="3" aria-label="Ir para foto 4"></button>
+        </div>
+
+        <div class="dia-a-dia-stats">
+          <div class="stat-box">
+            <i class="fa-solid fa-stopwatch"></i>
+            <h4>60 min</h4>
+            <p>Intensidade Máxima por Treino</p>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-users"></i>
+            <h4>Reduzido</h4>
+            <p>Grupos Pequenos para Máxima Atenção</p>
+          </div>
+          <div class="stat-box">
+            <i class="fa-solid fa-trophy"></i>
+            <h4>Elite</h4>
+            <p>Metodologia Padrão Meninos da Vila</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO / CTA FINAL -->
+    <section class="sec-contato" id="contato">
+      <div class="container">
+        <div class="contato-box">
+          <h2>Pronto para Levar Seu Futebol ao <span>Próximo Nível</span>?</h2>
+          <p>Agende uma aula experimental com o Treinador Pedro e viva a experiência de um treino profissional.</p>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20agendar%20minha%20aula%20experimental." target="_blank" rel="noopener" class="btn-cta-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Agendar Aula Experimental Agora
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <a href="#inicio" class="logo">
+          <i class="fa-solid fa-futbol"></i> PRO<span>PERFORMANCE</span>
+        </a>
+        <p>Desenvolvimento técnico, tático e físico para atletas de futebol em São Paulo.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ProPerformance - Treinador Pedro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Interativo de Detalhes -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close" aria-label="Fechar janela modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
